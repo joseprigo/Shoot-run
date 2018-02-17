@@ -386,20 +386,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of 689f12c... Merge branch 'master' of https://github.com/joseprigo/shoot-run
-=======
->>>>>>> parent of a9e410d... Revert "el coche se mueve"
-=======
->>>>>>> parent of a9e410d... Revert "el coche se mueve"
-=======
->>>>>>> parent of 689f12c... Merge branch 'master' of https://github.com/joseprigo/shoot-run
 --- !u!1 &1026107274
 GameObject:
   m_ObjectHideFlags: 0
