@@ -21,7 +21,7 @@ public class Generador_obstaculos : MonoBehaviour {
 			//CREAR OBJETO 
 			print("objeto nuevo añadido nuevo obstáculo");
 			Instantiate (obstaculos [Random.Range (0, obstaculos.Length)],
-				transform.position = new Vector3 (Random.Range (-6.0f, 6.0f), -14, 0),transform.rotation);
+				transform.position = new Vector3 (Random.Range (-6.0f, 6.0f),-7, 0),transform.rotation);
 			segundos_actuales = segundos;
 
 		}

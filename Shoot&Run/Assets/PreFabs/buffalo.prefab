@@ -9,82 +9,82 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1717643714765430}
+  m_RootGameObject: {fileID: 1477252930196330}
   m_IsPrefabParent: 1
---- !u!1 &1717643714765430
+--- !u!1 &1477252930196330
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4954114506486174}
-  - component: {fileID: 212263375250526886}
-  - component: {fileID: 61398313790990212}
-  - component: {fileID: 114613874617740532}
+  - component: {fileID: 4024426103511732}
+  - component: {fileID: 212647844923844272}
+  - component: {fileID: 61701616111331004}
+  - component: {fileID: 114152951833516336}
   m_Layer: 0
-  m_Name: arbol_bueno
+  m_Name: buffalo
   m_TagString: obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4954114506486174
+--- !u!4 &4024426103511732
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1717643714765430}
+  m_GameObject: {fileID: 1477252930196330}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.51, y: -7.56, z: 0}
-  m_LocalScale: {x: 0.594808, y: 0.54653317, z: 1}
+  m_LocalPosition: {x: -2.401, y: -4.2, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61398313790990212
+--- !u!61 &61701616111331004
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1717643714765430}
+  m_GameObject: {fileID: 1477252930196330}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.04646969, y: 0}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.82, y: 6.4}
-    newSize: {x: 3.82, y: 6.4}
+    oldSize: {x: 0.78, y: 1.12}
+    newSize: {x: 0.78, y: 1.12}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0318844, y: 6.4}
+  m_Size: {x: 0.78, y: 1.12}
   m_EdgeRadius: 0
---- !u!114 &114613874617740532
+--- !u!114 &114152951833516336
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1717643714765430}
+  m_GameObject: {fileID: 1477252930196330}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9c6195b8abaefe47b90e7754618cab6, type: 3}
+  m_Script: {fileID: 11500000, guid: b0062179ed283484780fd0961da91ad2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
---- !u!212 &212263375250526886
+--- !u!212 &212647844923844272
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1717643714765430}
+  m_GameObject: {fileID: 1477252930196330}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -112,13 +112,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3ada3c1a02dc2d3448e8658acccc7027, type: 3}
+  m_SortingOrder: 10
+  m_Sprite: {fileID: 21300000, guid: cbc0d830b683d194192a6bf1490f855c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.82, y: 6.4}
+  m_Size: {x: 0.78, y: 1.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
