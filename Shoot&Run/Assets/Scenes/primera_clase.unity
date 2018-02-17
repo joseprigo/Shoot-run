@@ -118,14 +118,19 @@ NavMeshSettings:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 --- !u!1 &795327392
+=======
+--- !u!1 &1102484765
+>>>>>>> parent of 689f12c... Merge branch 'master' of https://github.com/joseprigo/shoot-run
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 795327393}
   - component: {fileID: 795327395}
   - component: {fileID: 795327394}
@@ -187,6 +192,8 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
+=======
+>>>>>>> parent of 689f12c... Merge branch 'master' of https://github.com/joseprigo/shoot-run
   - component: {fileID: 1102484767}
   - component: {fileID: 1102484766}
   m_Layer: 0
@@ -227,6 +234,7 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of a9e410d... Revert "el coche se mueve"
 =======
@@ -247,6 +255,9 @@ Transform:
 >>>>>>> parent of a9e410d... Revert "el coche se mueve"
 =======
 >>>>>>> parent of a9e410d... Revert "el coche se mueve"
+=======
+  m_RootOrder: 7
+>>>>>>> parent of 689f12c... Merge branch 'master' of https://github.com/joseprigo/shoot-run
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1275513146
 GameObject:
@@ -405,6 +416,7 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of a9e410d... Revert "el coche se mueve"
 =======
@@ -425,6 +437,9 @@ Transform:
 >>>>>>> parent of a9e410d... Revert "el coche se mueve"
 =======
 >>>>>>> parent of a9e410d... Revert "el coche se mueve"
+=======
+  m_RootOrder: 5
+>>>>>>> parent of 689f12c... Merge branch 'master' of https://github.com/joseprigo/shoot-run
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1288779265
 Prefab:
@@ -467,12 +482,15 @@ Prefab:
 <<<<<<< HEAD
 =======
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 212394657681389298, guid: 1d6d60322c7f122408402e4b8bdedacc,
         type: 2}
       propertyPath: m_SortingOrder
       value: 10
 >>>>>>> parent of a9e410d... Revert "el coche se mueve"
       objectReference: {fileID: 0}
+=======
+>>>>>>> parent of 689f12c... Merge branch 'master' of https://github.com/joseprigo/shoot-run
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1d6d60322c7f122408402e4b8bdedacc, type: 2}
   m_IsPrefabParent: 0
@@ -844,6 +862,7 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of a9e410d... Revert "el coche se mueve"
 =======
@@ -864,6 +883,9 @@ Transform:
 >>>>>>> parent of a9e410d... Revert "el coche se mueve"
 =======
 >>>>>>> parent of a9e410d... Revert "el coche se mueve"
+=======
+  m_RootOrder: 2
+>>>>>>> parent of 689f12c... Merge branch 'master' of https://github.com/joseprigo/shoot-run
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1856323183
 GameObject:
@@ -993,12 +1015,15 @@ Prefab:
 <<<<<<< HEAD
 =======
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 212263375250526886, guid: 4bc15b696fec6524d8339b786f00cc90,
         type: 2}
       propertyPath: m_SortingOrder
       value: 10
 >>>>>>> parent of a9e410d... Revert "el coche se mueve"
       objectReference: {fileID: 0}
+=======
+>>>>>>> parent of 689f12c... Merge branch 'master' of https://github.com/joseprigo/shoot-run
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4bc15b696fec6524d8339b786f00cc90, type: 2}
   m_IsPrefabParent: 0
@@ -1059,6 +1084,7 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of a9e410d... Revert "el coche se mueve"
 =======
@@ -1079,4 +1105,7 @@ Transform:
 >>>>>>> parent of a9e410d... Revert "el coche se mueve"
 =======
 >>>>>>> parent of a9e410d... Revert "el coche se mueve"
+=======
+  m_RootOrder: 3
+>>>>>>> parent of 689f12c... Merge branch 'master' of https://github.com/joseprigo/shoot-run
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
