@@ -115,6 +115,7 @@ NavMeshSettings:
   m_NavMeshData: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 --- !u!1 &795327392
 GameObject:
@@ -170,71 +171,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
 >>>>>>> parent of 3f70d13... el coche se mueve
---- !u!1 &1102484765
 =======
---- !u!1 &795327392
+>>>>>>> parent of 689f12c... Merge branch 'master' of https://github.com/joseprigo/shoot-run
+--- !u!1 &1102484765
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 795327393}
-  - component: {fileID: 795327395}
-  - component: {fileID: 795327394}
-  m_Layer: 0
-  m_Name: Scene_controller
-  m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &795327393
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 795327392}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.18, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &795327394
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 795327392}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a02b3f4e6f3fb184590cfd1786e8ba32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &795327395
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 795327392}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9c6195b8abaefe47b90e7754618cab6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
---- !u!1 &1115047521
->>>>>>> 8f0c29d46f12e9a4288786f44c337f5a3defa47b
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1115047523}
-  - component: {fileID: 1115047522}
+  - component: {fileID: 1102484767}
+  - component: {fileID: 1102484766}
   m_Layer: 0
   m_Name: generador
   m_TagString: Untagged
@@ -242,32 +189,33 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1115047522
+--- !u!114 &1102484766
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1115047521}
+  m_GameObject: {fileID: 1102484765}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8612d2eb7101b2d4a85d09a16bdc0bbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   obstaculos:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1717643714765430, guid: 4bc15b696fec6524d8339b786f00cc90, type: 2}
+  - {fileID: 1692835894376682, guid: 1d6d60322c7f122408402e4b8bdedacc, type: 2}
   segundos: 2
---- !u!4 &1115047523
+--- !u!4 &1102484767
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1115047521}
+  m_GameObject: {fileID: 1102484765}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.09, y: -14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_RootOrder: 7
@@ -277,6 +225,9 @@ Transform:
 =======
   m_RootOrder: 8
 >>>>>>> parent of 3f70d13... el coche se mueve
+=======
+  m_RootOrder: 7
+>>>>>>> parent of 689f12c... Merge branch 'master' of https://github.com/joseprigo/shoot-run
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1275513146
 GameObject:
@@ -357,7 +308,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1282564070
 GameObject:
@@ -432,6 +383,7 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 5
 =======
   m_RootOrder: 7
@@ -439,6 +391,9 @@ Transform:
 =======
   m_RootOrder: 6
 >>>>>>> parent of 3f70d13... el coche se mueve
+=======
+  m_RootOrder: 5
+>>>>>>> parent of 689f12c... Merge branch 'master' of https://github.com/joseprigo/shoot-run
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1288779265
 Prefab:
@@ -478,11 +433,6 @@ Prefab:
     - target: {fileID: 4995276306571940, guid: 1d6d60322c7f122408402e4b8bdedacc, type: 2}
       propertyPath: m_RootOrder
       value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 212394657681389298, guid: 1d6d60322c7f122408402e4b8bdedacc,
-        type: 2}
-      propertyPath: m_SortingOrder
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1d6d60322c7f122408402e4b8bdedacc, type: 2}
@@ -581,7 +531,7 @@ Transform:
   m_LocalScale: {x: 0.287184, y: 0.28718403, z: 0.28718403}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &1401617871
 PolygonCollider2D:
@@ -852,6 +802,7 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 2
 =======
   m_RootOrder: 5
@@ -859,6 +810,9 @@ Transform:
 =======
   m_RootOrder: 3
 >>>>>>> parent of 3f70d13... el coche se mueve
+=======
+  m_RootOrder: 2
+>>>>>>> parent of 689f12c... Merge branch 'master' of https://github.com/joseprigo/shoot-run
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1856323183
 GameObject:
@@ -986,11 +940,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 212263375250526886, guid: 4bc15b696fec6524d8339b786f00cc90,
-        type: 2}
-      propertyPath: m_SortingOrder
-      value: 10
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4bc15b696fec6524d8339b786f00cc90, type: 2}
   m_IsPrefabParent: 0
@@ -1048,6 +997,7 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 3
 =======
   m_RootOrder: 6
@@ -1055,4 +1005,7 @@ Transform:
 =======
   m_RootOrder: 4
 >>>>>>> parent of 3f70d13... el coche se mueve
+=======
+  m_RootOrder: 3
+>>>>>>> parent of 689f12c... Merge branch 'master' of https://github.com/joseprigo/shoot-run
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
