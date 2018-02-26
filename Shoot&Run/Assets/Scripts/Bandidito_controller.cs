@@ -15,17 +15,18 @@ public class Bandidito_controller : MonoBehaviour {
 	Vector2 velini;
 	public GameObject Scenecontroller;
 	Scene_controler sc;
+	float rotacioini;
 
-	int direccion; // 0-> arriba, 1->abajo, 2->derecha, 3-> izquierda
 
 
 	// Use this for initialization
 	void Start () {
 
-		direccion = 0;
+
 
 		posini = transform.position;
 		velini = gameObject.GetComponent<Rigidbody2D> ().velocity;
+		rotacioini = gameObject.GetComponent<Rigidbody2D> ().rotation;
 
 	}
 	
@@ -41,22 +42,23 @@ public class Bandidito_controller : MonoBehaviour {
 
 
 	
-		if (moveHor < 0) {
+		if (moveHor < 0 && rotacioini!=90.00) {
+			print (moveHor);
 			print ("Anar a l'esquerra");
 			gameObject.GetComponent<Rigidbody2D> ().MoveRotation (90);
-			direccion = 3;
-		} else if (moveHor > 0) {
+			rotacioini = 90.00f;
+		} else if (moveHor > 0  && rotacioini!=270.00) {
 			print ("Anar a la dreta");
+			rotacioini = 270.00f;
 			gameObject.GetComponent<Rigidbody2D> ().MoveRotation (270);
-			direccion = 0;
-		} else if (moveVer < 0) {
+		} else if (moveVer < 0  && rotacioini!=180.00) {
 			print ("Anar a cap abaix");
+			rotacioini = 180.00f;
 			gameObject.GetComponent<Rigidbody2D> ().MoveRotation (180);
-			direccion = 3;
-		} else if (moveVer > 0) {
+		} else if (moveVer > 0  && rotacioini!=0.00) {
 			print ("Anar a a dalt");
+			rotacioini = 0.00f;
 			gameObject.GetComponent<Rigidbody2D> ().MoveRotation (0);
-			direccion = 0;
 		}
 
 
