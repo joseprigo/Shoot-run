@@ -18,13 +18,16 @@ public class Generador_obstaculos : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		//empieza restando el tiempo actual
 		segundos_actuales -= Time.deltaTime;
+
+		//
 		if (segundos_actuales <= 0.0f) {
 			//CREAR OBJETO 
 			print("objeto nuevo añadido nuevo obstáculo");
 			Instantiate (obstaculos [Random.Range (0, obstaculos.Length)],
 				transform.position = new Vector2 (X,Y),transform.rotation);
-			segundos_actuales = segundos;
+			segundos_actuales = Random.Range(1,segundos);
 
 		}
 	}

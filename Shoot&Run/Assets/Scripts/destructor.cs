@@ -15,7 +15,7 @@ public class destructor : MonoBehaviour {
 	}
 
 	void OnTriggerExit2D(Collider2D other){
-		if (other.gameObject.tag == "obstaculo") {
+		if (other.gameObject.tag == "obstaculo" || other.gameObject.tag == "obstaculoabajo") {
 			Destroy (other.gameObject);
 		}
 	}
