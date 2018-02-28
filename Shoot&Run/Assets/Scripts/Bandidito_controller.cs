@@ -12,7 +12,6 @@ using UnityEngine;
 public class Bandidito_controller : MonoBehaviour {
 	public float force;
 	Vector3 posini;
-	Vector2 velini;
 	public GameObject Scenecontroller;
 	Scene_controler sc;
 	float rotacioini;
@@ -25,7 +24,6 @@ public class Bandidito_controller : MonoBehaviour {
 
 
 		posini = transform.position;
-		velini = gameObject.GetComponent<Rigidbody2D> ().velocity;
 		rotacioini = gameObject.GetComponent<Rigidbody2D> ().rotation;
 
 	}
