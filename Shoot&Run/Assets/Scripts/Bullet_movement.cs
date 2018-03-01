@@ -24,5 +24,6 @@ public class Bullet_movement : MonoBehaviour
 			gameObject.GetComponent<Rigidbody2D> ().AddRelativeForce (new Vector2 (transform.localPosition.x,
 				transform.localPosition.y + 100));
     }
+
 }
 

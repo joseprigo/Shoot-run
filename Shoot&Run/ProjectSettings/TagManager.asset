@@ -6,6 +6,7 @@ TagManager:
   tags:
   - obstaculo
   - obstaculoabajo
+  - balaTag
   layers:
   - Default
   - TransparentFX

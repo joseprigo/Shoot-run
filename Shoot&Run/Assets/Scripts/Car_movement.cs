@@ -6,6 +6,7 @@ public class Car_movement : MonoBehaviour
 {
 
     public float speed;
+	public GameObject explosion;
     // Use this for initialization
     void Start()
     {
@@ -19,5 +20,16 @@ public class Car_movement : MonoBehaviour
             transform.position.y + speed * Time.deltaTime,
             transform.position.z);
     }
+	void OnTriggerEnter2D(Collider2D other){
+		if (other.gameObject.tag == "balaTag") {
+			Instantiate (explosion,
+				transform.position,transform.rotation);
+			Destroy (other.gameObject);
+			Destroy (gameObject);
+
+			
+		}
+	}
+
 }
 
