@@ -15,6 +15,8 @@ public class Bandidito_controller : MonoBehaviour {
 	public GameObject Scenecontroller;
 	Scene_controler sc;
 	float rotacioini;
+	float moveHor = 0.00f;
+	float moveVer = 0.00f;
 
 
 
@@ -23,45 +25,26 @@ public class Bandidito_controller : MonoBehaviour {
 
 
 
-		posini = transform.position;
 		rotacioini = gameObject.GetComponent<Rigidbody2D> ().rotation;
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		float moveHor = Input.GetAxis ("Horizontal"); //preguntar si hay algún movimiento en el eje horizontal
-		gameObject.GetComponent<Rigidbody2D> ().AddForce(new Vector2(moveHor * Time.deltaTime * force, 0.0f));
+		moveHor = Input.GetAxis ("Horizontal"); //preguntar si hay algún movimiento en el eje horizontal
+
+
+		moveVer = Input.GetAxis ("Vertical"); //preguntar si hay algún movimiento en el eje vertical
+
+		Vector2 fuerza = new Vector2(moveHor * Time.deltaTime * force, moveVer * Time.deltaTime * force);
+
+		gameObject.GetComponent<Rigidbody2D> ().AddForce(fuerza);
+
+		transform.rotation;
 
 
 
 
-		float moveVer = Input.GetAxis ("Vertical"); //preguntar si hay algún movimiento en el eje vertical
-
-
-	
-		if (moveHor < 0 && rotacioini!=90.00) {
-			print (moveHor);
-			print ("Anar a l'esquerra");
-			gameObject.GetComponent<Rigidbody2D> ().MoveRotation (90);
-			rotacioini = 90.00f;
-		} else if (moveHor > 0  && rotacioini!=270.00) {
-			print ("Anar a la dreta");
-			rotacioini = 270.00f;
-			gameObject.GetComponent<Rigidbody2D> ().MoveRotation (270);
-		} else if (moveVer < 0  && rotacioini!=180.00) {
-			print ("Anar a cap abaix");
-			rotacioini = 180.00f;
-			gameObject.GetComponent<Rigidbody2D> ().MoveRotation (180);
-		} else if (moveVer > 0  && rotacioini!=0.00) {
-			print ("Anar a a dalt");
-			rotacioini = 0.00f;
-			gameObject.GetComponent<Rigidbody2D> ().MoveRotation (0);
-		}
-
-
-
-		gameObject.GetComponent<Rigidbody2D> ().AddForce(new Vector2(0.0f,moveVer * Time.deltaTime * force));
 	}
 	/**void OnTriggerEnter2D(Collider2D other){
 		print ("ME HAS TOCADO");
