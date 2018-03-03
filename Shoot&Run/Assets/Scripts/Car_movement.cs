@@ -29,6 +29,13 @@ public class Car_movement : MonoBehaviour
 
 			
 		}
+		if (other.gameObject.tag == "playerTag") {
+			Instantiate (explosion,
+				transform.position,transform.rotation);
+			Destroy (gameObject);
+
+		}
+
 	}
 
 }
