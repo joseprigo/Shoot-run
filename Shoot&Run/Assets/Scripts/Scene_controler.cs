@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Scene_controler : MonoBehaviour {
 
+
 	// Use this for initialization
 	void Start () {
 		
@@ -14,6 +15,27 @@ public class Scene_controler : MonoBehaviour {
 		
 	}
 	public void OnDie(){
+		print ("muerto");
 		Application.Quit ();
+		//QUIDAO, A CONTINUCACIÓN HAY LA LINIA PARA SALIR DEL TEST EN EL MODO EDICION
+		UnityEditor.EditorApplication.isPlaying =false;
+	}
+
+
+	/**
+	 * 
+	 * Para poder acceder a estas funciones desde otros scripts
+	 * @param T nombre del script
+	 * @param nombreObjeto String nombre del objeto de unity en el que se encuentra el script
+	 * @returns un script del juego, por ejemplo el Estado_juego
+	 */
+	public static T ObtenerComponente<T>(string nombreObjeto) where T: UnityEngine.Component{
+		GameObject controlador = GameObject.Find (nombreObjeto);
+		if (controlador != null) {
+			return controlador.GetComponent<T> ();
+		} else {
+			Debug.LogError ("no existe el GameObject " + nombreObjeto);
+			return null;
+		}
 	}
 }

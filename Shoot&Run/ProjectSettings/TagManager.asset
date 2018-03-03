@@ -8,6 +8,8 @@ TagManager:
   - obstaculoabajo
   - balaTag
   - playerTag
+  - Barril
+  - RepairTool
   layers:
   - Default
   - TransparentFX

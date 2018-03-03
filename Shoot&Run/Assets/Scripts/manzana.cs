@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class manzana : MonoBehaviour {
 
+	public GameObject drawnExplosion;
+
 	// Use this for initialization
 	void Start () {
-		
+
 	}
 	
 	// Update is called once per frame
@@ -16,6 +18,8 @@ public class manzana : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other){
 		if ( other.gameObject.tag == "balaTag") {
+			Instantiate (drawnExplosion,
+				other.transform.position,other.transform.rotation);
 			Destroy (other.gameObject);
 		}
 	}
