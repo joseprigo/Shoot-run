@@ -55,7 +55,7 @@ public class Bandidito_controller : MonoBehaviour {
 		if (moveDirection != Vector2.zero) {
 			float angle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg-90;
 
-			transform.rotation = Quaternion.AngleAxis(angle, new Vector3(0.0f, 0.0f, 90.0f));
+			transform.rotation = Quaternion.AngleAxis(angle, new Vector3(0.0f, 0.0f, 100000.0f));
 		}
 
 
