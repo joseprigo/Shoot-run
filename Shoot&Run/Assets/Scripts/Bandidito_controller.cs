@@ -12,10 +12,10 @@ using System;
 
 public class Bandidito_controller : MonoBehaviour {
 	public float force;
-	Vector3 posini;
+	//Vector3 posini;
 	public GameObject Scenecontroller;
 	Scene_controler sc;
-	float rotacioini;
+
 	float moveHor = 0.00f;
 	float moveVer = 0.00f;
 
@@ -26,39 +26,52 @@ public class Bandidito_controller : MonoBehaviour {
 
 
 
-		rotacioini = gameObject.GetComponent<Rigidbody2D> ().rotation;
+	
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
-<<<<<<< HEAD
-		float moveHor = Input.GetAxis ("Horizontal"); //preguntar si hay algún movimiento en el eje horizontal
-=======
+
+
 		moveHor = Input.GetAxis ("Horizontal"); //preguntar si hay algún movimiento en el eje horizontal
->>>>>>> baa010fc2ad04020308717d71aafcdaf600773a8
 
 
-		moveVer = Input.GetAxis ("Vertical"); //preguntar si hay algún movimiento en el eje vertical
+
+		 moveVer = Input.GetAxis ("Vertical"); //preguntar si hay algún movimiento en el eje vertical
 
 		Vector2 fuerza = new Vector2(moveHor * Time.deltaTime * force, moveVer * Time.deltaTime * force);
 
 		gameObject.GetComponent<Rigidbody2D> ().AddForce(fuerza);
 
-		transform.rotation;
+
+		/**
+		 * Rotación
+		 * como se puede leer en el foro, el codigo está pensado para mover un objeto que se encuantra mirando
+		 * hacia, así que al calcular el ángulo le he restado 90 grados (no soy 100tifiko)
+		 * fuente: https://answers.unity.com/questions/630670/rotate-2d-sprite-towards-moving-direction.html 
+		 */
+		Vector2 moveDirection = gameObject.GetComponent<Rigidbody2D>().velocity;
+		if (moveDirection != Vector2.zero) {
+			float angle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg-90;
+
+			transform.rotation = Quaternion.AngleAxis(angle, new Vector3(0.0f, 0.0f, 1.0f));
+		}
 
 
-<<<<<<< HEAD
-		float moveVer = Input.GetAxis ("Vertical"); //preguntar si hay algún movimiento en el eje vertical
-		if(moveHor != 0 || moveVer != 0 ){
+		//transform.rotation = Quaternion.LookRotation(gameObject.GetComponent<Rigidbody2D> ().velocity);
+
+
+
+
+		/**if(moveHor != 0 || moveVer != 0 ){
 			Vector2 vectorDir = new Vector2 (moveHor * Time.deltaTime * force, moveVer * Time.deltaTime * force);
-=======
->>>>>>> baa010fc2ad04020308717d71aafcdaf600773a8
+
 
 			gameObject.GetComponent<Rigidbody2D> ().AddForce(vectorDir);
 
-<<<<<<< HEAD
-			float rot = Math.Atan2( (double)(moveHor * Time.deltaTime),(double)(moveVer * Time.deltaTime * force));
+
+
 		}
 		/*
 		print (moveVer);
@@ -80,8 +93,7 @@ public class Bandidito_controller : MonoBehaviour {
 
 
 
-=======
->>>>>>> baa010fc2ad04020308717d71aafcdaf600773a8
+
 	}
 	/**void OnTriggerEnter2D(Collider2D other){
 		print ("ME HAS TOCADO");

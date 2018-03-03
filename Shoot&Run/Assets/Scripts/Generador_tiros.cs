@@ -25,6 +25,7 @@ public class Generador_tiros : MonoBehaviour {
 			//print("objeto nuevo añadido nuevo obstáculo");
 			Instantiate (tiro,
 				transform.position,transform.rotation);
+			print (transform.rotation);
 			//segundos_actuales = Random.Range(1,segundos);
 
 		}
