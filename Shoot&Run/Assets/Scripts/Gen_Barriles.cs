@@ -37,7 +37,9 @@ public class Gen_Barriles : MonoBehaviour {
 		//empieza restando el tiempo actual
 		segundos_actuales -= Time.deltaTime;
 
-		//
+		//cuando los segundos sean 0,
+		//en un punto aleatorio, 
+		//instancia un obstaculo (barril o herramienta)
 		if (segundos_actuales <= 0.0f) {
 
 			Vector2 dondeGenero = puntos [Random.Range (0, puntos.Length)];

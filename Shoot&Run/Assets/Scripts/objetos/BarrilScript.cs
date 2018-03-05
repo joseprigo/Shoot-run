@@ -19,12 +19,12 @@ public class BarrilScript : MonoBehaviour
 
 		segundos-= Time.deltaTime;
 
-		//cuando falten 5.5 segundos para desaparecer, el barril empieza a parpadear
+		//cuando falten 5.0 segundos para desaparecer, el barril empieza a parpadear
 		if (segundos >= 0.0f && segundos <= 5.0f) {
 			mediosegundo -= Time.deltaTime;
 			if (mediosegundo <= 0.0f) {
 				toggle ();
-				mediosegundo =0.25f;;
+				mediosegundo =0.25f;
 			}
 		} 
 		if (segundos < 0.0f) {
