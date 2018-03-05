@@ -4,9 +4,16 @@
 TagManager:
   serializedVersion: 2
 <<<<<<< HEAD
-  tags: []
 =======
 >>>>>>> 985d9d4ff6c164079d9bba8618b4619129b50cb6
+  tags:
+  - obstaculo
+  - Barril
+  - obstaculoabajo
+  - obstaculoGrande
+  - RepairTool
+  - balaTag
+  - playerTag
   layers:
   - Default
   - TransparentFX
