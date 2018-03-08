@@ -1,12 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//gameObject es el objeto donde se encuentra ESTE script
+
 public class Bullet_movement : MonoBehaviour
 {
 
 	float segundos = 1.00f;
-    // Al inicio se llama a la funcion que destruirá este gameObject en 1 segundo
+    // Use this for initialization
     void Start()
     {
 		Destroy (gameObject, segundos);

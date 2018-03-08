@@ -17,7 +17,7 @@ public class Scene_controler : MonoBehaviour {
 	public void OnDie(){
 		print ("muerto");
 		Application.Quit ();
-		//CUIDAO, A CONTINUACIÓN HAY LA LINIA PARA SALIR DEL TEST EN EL MODO EDICION
+		//QUIDAO, A CONTINUCACIÓN HAY LA LINIA PARA SALIR DEL TEST EN EL MODO EDICION
 		UnityEditor.EditorApplication.isPlaying =false;
 	}
 

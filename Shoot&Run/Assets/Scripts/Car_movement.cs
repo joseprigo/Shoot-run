@@ -23,7 +23,6 @@ public class Car_movement : MonoBehaviour
             transform.position.z);
     }
 	//el coche "choca" con una bala
-	//instaciamos una explosion y destruimos tanto la bala como el coche
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.gameObject.tag == "balaTag") {
 			Instantiate (explosion,
