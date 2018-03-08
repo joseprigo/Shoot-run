@@ -6,9 +6,6 @@ TagManager:
 <<<<<<< HEAD
   tags:
   - obstaculo
-  - obstaculoGrande
-  - playerTag
-  - obstaculoabajo
   - Barril
   - RepairTool
   - balaTag
@@ -17,6 +14,7 @@ TagManager:
 =======
 >>>>>>> 985d9d4ff6c164079d9bba8618b4619129b50cb6
 >>>>>>> f64d7475f0a1a3a545c63a57239b1f82c1884f93
+  - playerTag
   layers:
   - Default
   - TransparentFX
