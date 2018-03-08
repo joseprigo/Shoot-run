@@ -26,7 +26,7 @@ public class Generador_tiros : MonoBehaviour {
 
 
 
-
+			//al iniciar un tiro su eje x e y se determina en base a la rotación actual de la pistola, es decir, el transform.rotation
 			Instantiate (tiro,
 				transform.position,transform.rotation);
 			//segundos_actuales = Random.Range(1,segundos);

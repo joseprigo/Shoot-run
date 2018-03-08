@@ -38,7 +38,7 @@ public class Text_controller : MonoBehaviour {
 		int Horas = tiempo / 3600;
 		int Minutos = tiempo/ 60 - Horas * 60;
 		int Segundos = tiempo- Minutos * 60 - Horas * 3600;
-		textTmp.text = Horas.ToString("D2") + " : " + Minutos.ToString("D2") + " : " + Segundos.ToString("D2");
+		textTmp.text = Horas.ToString("D2") + ":" + Minutos.ToString("D2") + ":" + Segundos.ToString("D2");
 		print (textTmp.text);
 
 
